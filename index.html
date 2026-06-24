@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Byron Walsh Case Study by Aman</title>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-
+​
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+​
 :root {
   --white:      #ffffff;
   --off-white:  #f7f6f3;
@@ -17,28 +17,28 @@
   --text:       #111110;
   --text-mid:   #2e2c2a;
   --text-muted: #4a4845;
-  --blue:       #1a43c8;
-  --blue-light: #eef1fc;
-  --blue-mid:   #c2cbf5;
-  --yellow:     #f5c842;
-  --yellow-lt:  #fdf6d8;
-  --yellow-mid: #f0d875;
+  --blue:       #0571d3;
+  --blue-light: #e7f1fc;
+  --blue-mid:   #a9d0f2;
+  --yellow:     #0571d3;
+  --yellow-lt:  #e7f1fc;
+  --yellow-mid: #a9d0f2;
 }
-
+​
 body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--white);
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
   color: var(--text);
   -webkit-font-smoothing: antialiased;
 }
-
+​
 html { scroll-behavior: smooth; }
-
+​
 .reveal { will-change: transform, opacity; }
-
+​
 /* ── LAYOUT ── */
-.page { max-width: 780px; margin: 0 auto; padding: 0 28px 80px; }
-
+.page { max-width: 780px; margin: 0 auto; padding: 48px 28px 80px; }
+​
 /* ── TOP NAV ── */
 nav {
   display: flex;
@@ -54,27 +54,27 @@ nav {
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.9);
 }
-
+​
 .nav-left,
 .nav-right {
   display: flex;
   align-items: center;
 }
-
+​
 .nav-right {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-
+​
 .nav-name {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--text);
   letter-spacing: 0.01em;
 }
-
+​
 .nav-tag {
   font-size: 11px;
   font-weight: 500;
@@ -86,13 +86,13 @@ nav {
   border-radius: 999px;
   background: var(--off-white);
 }
-
+​
 .nav-links {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-
+​
 .nav-link {
   text-decoration: none;
   font-size: 11px;
@@ -105,7 +105,7 @@ nav {
   padding: 6px 10px;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
-
+​
 .nav-link:hover,
 .nav-link:focus-visible {
   background: var(--blue-light);
@@ -113,23 +113,23 @@ nav {
   color: var(--blue);
   outline: none;
 }
-
+​
 /* ── HERO ── */
 .hero { margin-bottom: 80px; }
-
+​
 .hero-kicker {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 28px;
 }
-
+​
 .kicker-dot {
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--blue);
 }
-
+​
 .kicker-text {
   font-size: 11px;
   font-weight: 600;
@@ -137,9 +137,9 @@ nav {
   text-transform: uppercase;
   color: var(--blue);
 }
-
+​
 .hero-headline {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: clamp(48px, 9vw, 80px);
   font-weight: 700;
   line-height: 1.0;
@@ -147,12 +147,12 @@ nav {
   color: var(--text);
   margin-bottom: 28px;
 }
-
+​
 .hero-headline em {
   font-style: italic;
   color: var(--blue);
 }
-
+​
 .hero-sub {
   font-size: 16px;
   font-weight: 300;
@@ -161,12 +161,12 @@ nav {
   max-width: 540px;
   margin-bottom: 40px;
 }
-
+​
 .hero-sub strong {
   font-weight: 500;
   color: var(--text);
 }
-
+​
 /* ── META STRIP ── */
 .meta {
   display: grid;
@@ -177,14 +177,14 @@ nav {
   margin-bottom: 80px;
   background: var(--blue-light);
 }
-
+​
 .meta-cell {
   padding: 18px 20px;
   border-right: 1px solid var(--blue-mid);
 }
-
+​
 .meta-cell:last-child { border-right: none; }
-
+​
 .meta-cell label {
   display: block;
   font-size: 10px;
@@ -194,13 +194,13 @@ nav {
   color: var(--text-muted);
   margin-bottom: 6px;
 }
-
+​
 .meta-cell span {
   font-size: 14px;
   font-weight: 500;
   color: var(--text);
 }
-
+​
 /* ── SECTION LABEL ── */
 .sec-label {
   font-size: 10px;
@@ -213,28 +213,28 @@ nav {
   align-items: center;
   gap: 12px;
 }
-
+​
 .sec-label::after {
   content: '';
   flex: 1;
   height: 1px;
   background: var(--border);
 }
-
+​
 /* ── STORY ── */
 .story { margin-bottom: 80px; }
-
+​
 .story-text {
   font-size: 15px;
   font-weight: 300;
   color: var(--text-mid);
   line-height: 1.85;
 }
-
+​
 .story-text p { margin-bottom: 18px; }
 .story-text p:last-child { margin-bottom: 0; }
 .story-text strong { font-weight: 500; color: var(--text); }
-
+​
 .pull-quote {
   margin: 36px 0;
   padding: 24px 28px;
@@ -242,9 +242,9 @@ nav {
   border-left: 3px solid var(--blue);
   border-radius: 0 10px 10px 0;
 }
-
+​
 .pull-quote p {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
   font-style: italic;
   font-weight: 600;
@@ -252,68 +252,68 @@ nav {
   line-height: 1.45;
   margin: 0;
 }
-
+​
 /* ── STATS ── */
 .stats { margin-bottom: 80px; }
-
+​
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
-
+​
 .stat-card {
   background: var(--off-white);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 24px 20px 20px;
 }
-
+​
 .stat-card.highlight {
   background: var(--blue);
   border-color: var(--blue);
 }
-
+​
 .stat-card.highlight .stat-num { color: var(--white); }
 .stat-card.highlight .stat-label { color: rgba(255,255,255,0.65); }
-
+​
 .stat-num {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 42px;
   font-weight: 700;
   color: var(--text);
   line-height: 1;
   margin-bottom: 8px;
 }
-
+​
 .stat-label {
   font-size: 12px;
   font-weight: 400;
   color: var(--text-muted);
   line-height: 1.4;
 }
-
+​
 /* ── BEFORE AFTER ── */
 .ba { margin-bottom: 80px; }
-
+​
 .ba-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-
+​
 .ba-card {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 24px;
   background: var(--white);
 }
-
+​
 .ba-card.after {
   background: var(--blue-light);
   border-color: var(--blue-mid);
 }
-
+​
 .ba-pill {
   display: inline-block;
   font-size: 10px;
@@ -324,10 +324,10 @@ nav {
   border-radius: 100px;
   margin-bottom: 20px;
 }
-
+​
 .ba-pill.before { background: var(--light-gray); color: var(--text-muted); }
 .ba-pill.after  { background: var(--blue); color: var(--white); }
-
+​
 .ba-row {
   display: flex;
   justify-content: space-between;
@@ -336,23 +336,23 @@ nav {
   border-bottom: 1px solid var(--border);
   gap: 12px;
 }
-
+​
 .ba-card.after .ba-row { border-bottom-color: var(--blue-mid); }
 .ba-row:last-child { border-bottom: none; }
-
+​
 .ba-key { font-size: 12px; color: var(--text-muted); }
 .ba-val { font-size: 13px; font-weight: 600; color: var(--text); }
 .ba-card.after .ba-val { color: var(--blue); }
-
+​
 /* ── SCOPE ── */
 .scope { margin-bottom: 80px; }
-
+​
 .scope-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-
+​
 .scope-card {
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -360,52 +360,52 @@ nav {
   background: var(--white);
   transition: border-color 0.2s;
 }
-
+​
 .scope-card:hover { border-color: var(--blue-mid); }
-
+​
 .scope-num {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--border);
   margin-bottom: 12px;
   line-height: 1;
 }
-
+​
 .scope-title {
   font-size: 13px;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 6px;
 }
-
+​
 .scope-body {
   font-size: 12px;
   font-weight: 300;
   color: var(--text-muted);
   line-height: 1.6;
 }
-
+​
 /* ── TIMELINE ── */
 .timeline { margin-bottom: 80px; }
-
+​
 .tl {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: 0;
 }
-
+​
 .tl-item {
   display: contents;
 }
-
+​
 .tl-left {
   padding: 0 24px 36px 0;
   border-right: 1px solid var(--border);
   text-align: right;
   position: relative;
 }
-
+​
 .tl-left::after {
   content: '';
   position: absolute;
@@ -416,10 +416,10 @@ nav {
   background: var(--white);
   border: 2px solid var(--blue);
 }
-
+​
 .tl-item:last-child .tl-left { border-right-color: transparent; }
 .tl-item:first-child .tl-left::after { background: var(--blue); }
-
+​
 .tl-month {
   font-size: 11px;
   font-weight: 600;
@@ -427,39 +427,39 @@ nav {
   text-transform: uppercase;
   color: var(--blue);
 }
-
+​
 .tl-right {
   padding: 0 0 36px 28px;
 }
-
+​
 .tl-title {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 8px;
   line-height: 1.2;
 }
-
+​
 .tl-body {
   font-size: 13px;
   font-weight: 300;
   color: var(--text-muted);
   line-height: 1.7;
 }
-
+​
 .tl-stat {
   display: inline-block;
   margin-top: 10px;
   background: var(--yellow-lt);
   border: 1px solid var(--yellow-mid);
-  color: #7a5e00;
+  color: var(--blue);
   font-size: 11px;
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 100px;
 }
-
+​
 /* ── OUTLIER ── */
 .outlier {
   background: var(--yellow-lt);
@@ -472,52 +472,52 @@ nav {
   gap: 28px;
   align-items: start;
 }
-
+​
 .outlier-num {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--text);
   line-height: 1;
 }
-
+​
 .outlier-title {
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 8px;
 }
-
+​
 .outlier-body {
   font-size: 13px;
   font-weight: 300;
   color: var(--text-mid);
   line-height: 1.7;
 }
-
+​
 /* ── PROOF ── */
 .proof { margin-bottom: 80px; }
-
+​
 .proof-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-
+​
 .proof-card {
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
   background: var(--off-white);
 }
-
+​
 .proof-card img {
   width: 100%;
   display: block;
   object-fit: cover;
   max-height: 200px;
 }
-
+​
 .proof-cap {
   padding: 10px 14px;
   font-size: 11px;
@@ -526,8 +526,8 @@ nav {
   border-top: 1px solid var(--border);
   line-height: 1.4;
 }
-
-
+​
+​
 /* ── PROOF REDESIGN ── */
 .proof-hero {
   position: relative;
@@ -536,7 +536,7 @@ nav {
   margin-bottom: 12px;
   border: 1px solid var(--border);
 }
-
+​
 .proof-hero img {
   width: 100%;
   display: block;
@@ -544,7 +544,7 @@ nav {
   object-fit: cover;
   object-position: top;
 }
-
+​
 .proof-hero-badge {
   position: absolute;
   bottom: 20px;
@@ -554,15 +554,15 @@ nav {
   padding: 14px 20px;
   text-align: right;
 }
-
+​
 .phb-num {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 32px;
   font-weight: 700;
   color: var(--white);
   line-height: 1;
 }
-
+​
 .phb-label {
   font-size: 11px;
   font-weight: 500;
@@ -570,7 +570,7 @@ nav {
   margin-top: 4px;
   letter-spacing: 0.05em;
 }
-
+​
 .proof-compare {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -578,7 +578,7 @@ nav {
   align-items: center;
   margin-bottom: 12px;
 }
-
+​
 .proof-compare-card {
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -586,7 +586,7 @@ nav {
   background: var(--off-white);
   position: relative;
 }
-
+​
 .proof-compare-card img {
   width: 100%;
   display: block;
@@ -594,7 +594,7 @@ nav {
   object-fit: cover;
   object-position: top;
 }
-
+​
 .pcc-tag {
   position: absolute;
   top: 12px;
@@ -607,10 +607,10 @@ nav {
   border-radius: 100px;
   z-index: 2;
 }
-
+​
 .pcc-tag.before-tag { background: rgba(0,0,0,0.55); color: #fff; }
 .pcc-tag.after-tag  { background: var(--blue); color: #fff; }
-
+​
 .pcc-stat {
   padding: 10px 14px;
   font-size: 11px;
@@ -618,27 +618,27 @@ nav {
   border-top: 1px solid var(--border);
   line-height: 1.4;
 }
-
+​
 .proof-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-
+​
 .proof-milestones {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-
+​
 .proof-milestone-card {
   position: relative;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border);
 }
-
+​
 .proof-milestone-card img {
   width: 100%;
   display: block;
@@ -647,14 +647,14 @@ nav {
   object-position: top;
   filter: brightness(0.6);
 }
-
+​
 .pmc-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   padding: 16px;
   background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
 }
-
+​
 .pmc-month {
   font-size: 10px;
   font-weight: 600;
@@ -663,22 +663,22 @@ nav {
   color: var(--yellow);
   margin-bottom: 2px;
 }
-
+​
 .pmc-num {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 700;
   color: var(--white);
   line-height: 1;
 }
-
+​
 .pmc-sub {
   font-size: 11px;
   color: rgba(255,255,255,0.7);
   margin-top: 3px;
 }
-
-
+​
+​
 /* ── CTA BLOCK ── */
 .cta-block {
   background: var(--blue);
@@ -691,16 +691,16 @@ nav {
   gap: 24px;
   flex-wrap: wrap;
 }
-
+​
 .cta-text {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   font-style: italic;
   color: var(--white);
   line-height: 1.5;
   max-width: 440px;
 }
-
+​
 .cta-btn {
   display: inline-block;
   background: var(--yellow);
@@ -713,9 +713,9 @@ nav {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
+​
 .cta-btn:hover { background: var(--yellow-mid); }
-
+​
 /* ── NOTE ── */
 .note {
   background: var(--off-white);
@@ -727,9 +727,9 @@ nav {
   line-height: 1.65;
   margin-bottom: 80px;
 }
-
+​
 .note strong { color: var(--text); font-weight: 600; }
-
+​
 /* ── FOOTER ── */
 footer {
   border-top: 1px solid var(--border);
@@ -740,24 +740,24 @@ footer {
   flex-wrap: wrap;
   gap: 16px;
 }
-
+​
 .footer-name {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--text);
 }
-
+​
 .footer-name span {
   color: var(--blue);
   font-style: italic;
 }
-
+​
 .footer-tag {
   font-size: 12px;
   color: var(--text-muted);
 }
-
+​
 .footer-ig {
   display: inline-flex;
   align-items: center;
@@ -772,9 +772,9 @@ footer {
   border-radius: 100px;
   transition: background 0.2s;
 }
-
+​
 .footer-ig:hover { background: var(--blue-mid); }
-
+​
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal,
@@ -787,7 +787,7 @@ footer {
     transition: none !important;
   }
 }
-
+​
 /* ── RESPONSIVE ── */
 @media (max-width: 560px) {
   nav {
@@ -817,28 +817,14 @@ footer {
   .tl { grid-template-columns: 72px 1fr; }
   footer { flex-direction: column; align-items: flex-start; }
 }
-
+​
+/* ── Brand label font (Roboto Mono) ── */
+.kicker-text, .sec-label, .meta-cell label, .stat-label, .pmc-month, .pcc-tag, .phb-label, .tl-stat { font-family: 'Roboto Mono', monospace; }
 </style>
 </head>
 <body>
 <div class="page">
-
-  <!-- NAV -->
-  <nav class="reveal">
-    <div class="nav-left">
-      <div class="nav-name">Aman</div>
-    </div>
-    <div class="nav-right">
-      <div class="nav-tag">Personal Branding · Case Study</div>
-      <div class="nav-links">
-        <a class="nav-link" href="#results">Results</a>
-        <a class="nav-link" href="#timeline">Timeline</a>
-        <a class="nav-link" href="#proof">Proof</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
+​
   <!-- HERO -->
   <section class="hero reveal" id="overview">
     <div class="hero-kicker">
@@ -854,7 +840,7 @@ footer {
       Byron Walsh is a forex trader who knew his craft but had <strong>no presence, no content direction, and no idea how to build one.</strong> I took over his Instagram end-to-end strategy, content, profile, everything and built his brand from the ground up in three months.
     </p>
   </section>
-
+​
   <!-- META -->
   <div class="meta reveal">
     <div class="meta-cell"><label>Client</label><span>Byron Walsh</span></div>
@@ -862,23 +848,23 @@ footer {
     <div class="meta-cell"><label>Platform</label><span>Instagram</span></div>
     <div class="meta-cell"><label>Timeline</label><span>3 Months</span></div>
   </div>
-
+​
   <!-- STORY -->
   <section class="story reveal">
     <div class="sec-label">The situation</div>
     <div class="story-text">
       <p>Byron found me through my Instagram page, which had around 7–8K followers at the time. He reached out, we talked, and it was clear <strong>he had real knowledge but his profile wasn't showing any of it.</strong> The bio was weak, the content had no direction, and there was nothing that would make a stranger stop and take him seriously as a forex trader.</p>
-
+​
       <div class="pull-quote">
         <p>"He had the expertise. The profile just wasn't showing it to anyone."</p>
       </div>
-
+​
       <p>He hired me to handle everything. Not just posting full ownership of his content strategy, production, profile setup, and brand direction. I researched the forex content space, found the angles that were actually working, and built a system that would position Byron as a credible, trustworthy voice worth following.</p>
-
+​
       <p>Over three months I published <strong>100+ pieces of content</strong> carousels, B-roll reels, motivational videos, educational posts each built with one goal: move someone from stranger to follower to believer.</p>
     </div>
   </section>
-
+​
   <!-- STATS -->
   <section class="stats reveal" id="results">
     <div class="sec-label">Results at a glance</div>
@@ -909,7 +895,7 @@ footer {
       </div>
     </div>
   </section>
-
+​
   <!-- BEFORE AFTER -->
   <section class="ba reveal">
     <div class="sec-label">Before vs after</div>
@@ -934,7 +920,7 @@ footer {
       </div>
     </div>
   </section>
-
+​
   <!-- SCOPE -->
   <section class="scope reveal">
     <div class="sec-label">What I did</div>
@@ -971,12 +957,12 @@ footer {
       </div>
     </div>
   </section>
-
+​
   <!-- TIMELINE -->
   <section class="timeline reveal" id="timeline">
     <div class="sec-label">Growth timeline</div>
     <div class="tl">
-
+​
       <div class="tl-item">
         <div class="tl-left"><div class="tl-month">Week 1</div></div>
         <div class="tl-right">
@@ -984,7 +970,7 @@ footer {
           <div class="tl-body">Before a single post went out, I rebuilt the profile. Bio rewritten. Highlights structured. Name field optimized. The account needed to look the part before we asked anyone to follow it.</div>
         </div>
       </div>
-
+​
       <div class="tl-item">
         <div class="tl-left"><div class="tl-month">Month 1</div></div>
         <div class="tl-right">
@@ -993,7 +979,7 @@ footer {
           <span class="tl-stat">5K-9K profile views / month</span>
         </div>
       </div>
-
+​
       <div class="tl-item">
         <div class="tl-left"><div class="tl-month">Month 2</div></div>
         <div class="tl-right">
@@ -1002,7 +988,7 @@ footer {
           <span class="tl-stat">222K views on one reel</span>
         </div>
       </div>
-
+​
       <div class="tl-item">
         <div class="tl-left"><div class="tl-month">Month 3</div></div>
         <div class="tl-right">
@@ -1010,10 +996,10 @@ footer {
           <div class="tl-body">100+ posts published. Full content library built. Byron Walsh went from unknown with 58 followers to a recognized forex voice with a real audience in under 90 days.</div>
         </div>
       </div>
-
+​
     </div>
   </section>
-
+​
   <!-- OUTLIER -->
   <div class="outlier reveal">
     <div class="outlier-num">222K.</div>
@@ -1022,11 +1008,11 @@ footer {
       <div class="outlier-body">Byron filmed it. I built the concept, framed the hook, and knew exactly why it would work before it even went live. It hit 222,000 views and nobody paid a single rupee for it. That is not luck. That is knowing what makes people stop scrolling.</div>
     </div>
   </div>
-
+​
   <!-- PROOF -->
   <section class="proof reveal" id="proof">
     <div class="sec-label">Real screenshots · Real results</div>
-
+​
     <div class="proof-hero">
       <img src="after.png" alt="Byron Walsh final result 3015 followers" />
       <div class="proof-hero-badge">
@@ -1034,7 +1020,7 @@ footer {
         <div class="phb-label">followers · final result</div>
       </div>
     </div>
-
+​
     <div class="proof-compare">
       <div class="proof-compare-card">
         <div class="pcc-tag before-tag">Before</div>
@@ -1052,7 +1038,7 @@ footer {
         <div class="pcc-stat">3,015 followers · full brand · real authority</div>
       </div>
     </div>
-
+​
     <div class="proof-milestones">
       <div class="proof-milestone-card">
         <img src="month1.png" alt="Month 1 growth" />
@@ -1071,46 +1057,28 @@ footer {
         </div>
       </div>
     </div>
-
+​
   </section>
-
+​
   <!-- NOTE -->
   <div class="note reveal">
     <strong>Transparency:</strong> Byron deleted the majority of his posts and rebranded his account independently after our engagement ended. The screenshots above were captured during and immediately after the active 3-month period and accurately reflect the results achieved. A PayPal payment record from Byron Walsh is also on file as additional verification.
   </div>
-
-  <!-- WHAT THIS MEANS FOR YOU -->
-  <div class="cta-block reveal" id="contact">
-    <div class="cta-text">If you are a coach or founder who knows your stuff but your profile is not showing it yet, this is exactly what I do.</div>
-    <a href="https://www.instagram.com/rawbrand.media/" target="_blank" class="cta-btn">Let's work together</a>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="reveal">
-    <div>
-      <div class="footer-name">Aman · <span>Personal Branding</span></div>
-      <div class="footer-tag" style="margin-top:6px;">I help coaches and founders build a personal brand that actually gets them clients.</div>
-    </div>
-    <a href="https://www.instagram.com/rawbrand.media/" target="_blank" class="footer-ig">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-      @rawbrandmedia
-    </a>
-  </footer>
-
+​
 </div>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script>
   if (window.gsap && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     gsap.registerPlugin(ScrollTrigger);
-
+​
     gsap.from('nav', {
       y: -20,
       opacity: 0,
       duration: 0.7,
       ease: 'power2.out'
     });
-
+​
     gsap.from('.hero-kicker, .hero-headline, .hero-sub', {
       y: 24,
       opacity: 0,
@@ -1119,7 +1087,7 @@ footer {
       delay: 0.1,
       ease: 'power3.out'
     });
-
+​
     gsap.from('.meta-cell', {
       y: 18,
       opacity: 0,
@@ -1128,7 +1096,7 @@ footer {
       delay: 0.25,
       ease: 'power2.out'
     });
-
+​
     gsap.utils.toArray('.story, .ba, .timeline, .proof, .note, .cta-block, footer').forEach((block) => {
       gsap.from(block, {
         scrollTrigger: {
@@ -1141,7 +1109,7 @@ footer {
         ease: 'power2.out'
       });
     });
-
+​
     gsap.utils.toArray('.stat-card').forEach((card, i) => {
       gsap.from(card, {
         scrollTrigger: {
@@ -1155,7 +1123,7 @@ footer {
         ease: 'power2.out'
       });
     });
-
+​
     gsap.utils.toArray('.scope-card').forEach((card, i) => {
       gsap.from(card, {
         scrollTrigger: {
@@ -1169,7 +1137,7 @@ footer {
         ease: 'power2.out'
       });
     });
-
+​
     gsap.from('.outlier', {
       scrollTrigger: {
         trigger: '.outlier',
@@ -1180,7 +1148,7 @@ footer {
       duration: 0.8,
       ease: 'power3.out'
     });
-
+​
     gsap.from('.outlier-num', {
       scrollTrigger: {
         trigger: '.outlier',
@@ -1191,7 +1159,7 @@ footer {
       duration: 0.75,
       ease: 'back.out(1.5)'
     });
-
+​
     gsap.utils.toArray('.proof-compare-card, .proof-milestone-card').forEach((card) => {
       gsap.from(card, {
         scrollTrigger: {
@@ -1209,3 +1177,4 @@ footer {
 </script>
 </body>
 </html>
+​
